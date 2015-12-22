@@ -1,0 +1,284 @@
+body{
+    color: white;
+    background-color:black;
+    box-sizing: border-box;
+}
+
+.icon:before{
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 20px;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+div.game.cont, div.city.cont{
+    display: inline-block;
+    vertical-align: top;
+    border: 0px solid red;
+}
+
+div.game.cont{
+    border-right 1px;
+    width: 350px;
+}
+div.city.cont{
+    border-left 1px;
+}
+div.game.cont div.cities {
+    margin-top: 10px;
+}
+
+div.game.cont div.city {
+    display: inline-block;
+    cursor: pointer;
+}
+
+div.game.cont div.gold, div.game.cont div.buildings{
+    display: inline-block;
+}
+
+div.gold span.gold.icon:before {
+    background-image: url(../img/gold.png);
+    background-position: 2px 1px;
+}
+
+div.buildings div.icon, div.buildings div.count {
+    display: inline-block;
+}
+
+div.buildings div.icon:before {
+    background-image: url(../img/building.png);
+    background-position: 2px 1px;
+}
+
+div.buildings div.count {
+    font-size: 10px;
+    display: inline-block;
+}
+
+div.city span.city-name{
+    font-size: 19px;
+}
+
+div.city span.city{
+    font-size: 13px;
+    margin-left: 3px;
+    color: #ccc;
+}
+
+div.gold span.gold {
+  color: gold;
+}
+
+div.city.cont div.buildings {
+   background-color: white;
+   padding: 10px;
+}
+
+div.city.cont div.buildings div.building-cont{
+    position: relative;
+    margin-top: 15px;
+    text-align: center;
+}
+
+div.buildings div.building.icon:before{
+    width: 48px;
+    height: 48px;
+}
+
+div.building.town-hall.icon.level-0:before,
+div.building.town-hall.icon.level-1:before {
+    background-image: url(../img/town-hall-1.png) !important;
+    background-position: 2px 1px;
+}
+div.building.town-hall.icon.level-2:before {
+    background-image: url(../img/town-hall-2.png) !important;
+    background-position: 2px 1px;
+}
+div.building.town-hall.icon.level-3:before,
+div.building.town-hall.icon.level-4:before {
+    background-image: url(../img/town-hall-3.png) !important;
+    background-position: 2px 1px;
+}
+div.building.town-hall.icon.level-5:before,
+div.building.town-hall.icon:before {
+    background-image: url(../img/town-hall-5.png);
+    background-position: 2px 1px;
+}
+
+div.building.supermarket.icon.level-0:before,
+div.building.supermarket.icon.level-1:before {
+    background-image: url(../img/market-1.png) !important;
+    background-position: 2px 1px;
+}
+div.building.supermarket.icon.level-2:before {
+    background-image: url(../img/market-2.png) !important;
+    background-position: 2px 1px;
+}
+div.building.supermarket.icon.level-3:before,
+div.building.supermarket.icon.level-4:before {
+    background-image: url(../img/market-3.png) !important;
+    background-position: 2px 1px;
+}
+div.building.supermarket.icon.level-5:before,
+div.building.supermarket.icon:before {
+    background-image: url(../img/market-5.png);
+    background-position: 2px 1px;
+}
+
+div.building.restaurant.icon.level-0:before,
+div.building.restaurant.icon.level-1:before {
+   background-image: url(../img/restaurant-1.png) !important;
+   background-position: 2px 1px;
+}
+div.building.restaurant.icon.level-2:before {
+   background-image: url(../img/restaurant-2.png) !important;
+   background-position: 2px 1px;
+}
+div.building.restaurant.icon.level-3:before {
+   background-image: url(../img/restaurant-3.png) !important;
+   background-position: 2px 1px;
+}
+div.building.restaurant.icon.level-4:before {
+   background-image: url(../img/restaurant-4.png) !important;
+   background-position: 2px 1px;
+}
+div.building.restaurant.icon.level-5:before,
+div.building.restaurant.icon:before {
+   background-image: url(../img/restaurant-5.png);
+   background-position: 2px 1px;
+}
+
+div.building.expo-center.icon.level-0:before,
+div.building.expo-center.icon.level-1:before {
+   background-image: url(../img/expo-center-1.png) !important;
+   background-position: 2px 1px;
+}
+div.building.expo-center.icon.level-2:before {
+   background-image: url(../img/expo-center-2.png) !important;
+   background-position: 2px 1px;
+}
+div.building.expo-center.icon.level-3:before {
+   background-image: url(../img/expo-center-3.png) !important;
+   background-position: 2px 1px;
+}
+div.building.expo-center.icon.level-4:before {
+   background-image: url(../img/expo-center-4.png) !important;
+   background-position: 2px 1px;
+}
+div.building.expo-center.icon.level-5:before,
+div.building.expo-center.icon:before {
+   background-image: url(../img/expo-center-5.png);
+   background-position: 2px 1px;
+}
+
+div.building.train-station.icon.level-0:before,
+div.building.train-station.icon.level-1:before {
+   background-image: url(../img/train-station-1.png) !important;
+   background-position: 2px 1px;
+}
+div.building.train-station.icon.level-2:before {
+   background-image: url(../img/train-station-2.png) !important;
+   background-position: 2px 1px;
+}
+div.building.train-station.icon.level-3:before {
+   background-image: url(../img/train-station-3.png) !important;
+   background-position: 2px 1px;
+}
+div.building.train-station.icon.level-4:before,
+div.building.train-station.icon:before {
+   background-image: url(../img/train-station-4.png);
+   background-position: 2px 1px;
+}
+
+div.buildings div.level {
+    font-size: 15px;
+    background-color: red;
+    color: black;
+    padding: 3px;
+    border-radius: 22px;
+    position: absolute;
+    top: -3px;
+    right: 11px;
+}
+
+div.buildings div.building-cont div.building-type{
+    color: black;
+    font-size: 11px;
+    text-align: center;
+    margin-top: 3px;
+}
+
+div.buildings button{
+    text-align: center;
+    cursor: pointer;
+}
+
+div.buildings button:hover{
+   background-color:#C1BFBF;
+}
+
+div.buildings button, div.buildings div.progressbar,
+div.buildings div.progress, div.buildings div.progress-percentage {
+    height: 16px;
+    width: 75px;
+    box-sizing: border-box;
+}
+
+div.buildings button, div.buildings div.progressbar{
+    border: none;
+    border-radius: 3px;
+    font-size: 10px;
+    color:black;
+}
+
+div.buildings div.progressbar {
+    display: none;
+    border: 1px solid black;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin-top: 2px;
+}
+
+div.buildings div.progress, div.buildings div.progress-percentage {
+    position: absolute;
+    top: 0px;
+    height: 100%;
+}
+
+div.buildings div.progress {
+    background-color: lightblue;
+}
+
+div.buildings div.progress-percentage {
+    margin-top: 2px;
+}
+
+div.buildings div.building-cont.not-built div.building,
+div.buildings div.building-cont.in-process div.building,
+div.buildings div.building-cont.work-in-progress div.building{
+    opacity: 0.5 !important;
+}
+
+div.buildings div.building-cont.built div.building{
+    opacity: 1;
+}
+
+div.buildings div.building-cont.work-in-progress button, div.buildings div.building-cont.in-process button  {
+    display:none !important;
+}
+
+div.buildings div.building-cont.work-in-progress div.progressbar, div.buildings div.building-cont.in-process div.progressbar{
+    display:block !important;
+}
+
+div.buildings div.building-cont.in-process div.progressbar div.progress-percentage, div.buildings div.building-cont.in-process div.progressbar div.progress{
+    display:none !important;
+}
+
+bar
